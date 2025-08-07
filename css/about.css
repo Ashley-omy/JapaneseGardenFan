@@ -1,0 +1,44 @@
+article {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; 
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+  
+article .left {
+    flex: 1;
+}
+  
+article .right {
+    flex: 1;
+}
+
+article .right video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+      
+iframe{
+    margin-top: 20px;
+}
+  /*responsive design (smartphone) */
+  @media (max-width: 768px) {
+    article {
+      flex-direction: column;
+    }
+    
+  
+    article .left,
+    article .right {
+      width: 100%;
+    }
+  }
+  

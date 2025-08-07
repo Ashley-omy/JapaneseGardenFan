@@ -1,0 +1,67 @@
+/* ==============================
+   Print Style for Japánkert Fan
+   ============================== */
+
+   @media print {
+    /* Hide repetitive elements */
+    header,
+    nav,
+    footer,
+    .font-size-buttons,
+    .video-content,
+    .js-content,
+    script,
+    video,
+    iframe {
+      display: none !important;
+    }
+  
+    /* Hide any sidebar if present */
+    aside {
+      display: none !important;
+    }
+  
+    /* Scale images */
+    img {
+      max-width: 90% !important;
+      height: auto !important;
+      display: block;
+      margin: 1em auto;
+    }
+  
+    /* Simplify text: use readable, ink-friendly font */
+    body {
+      font-family: serif;
+      font-size: 12pt;
+      color: #000;
+      background: none;
+    }
+  
+    /* Layout optimization for A4 */
+    @page {
+      size: A4;
+      margin: 20mm;
+    }
+  
+    /* Remove background colors and shadows */
+    * {
+      background: none !important;
+      box-shadow: none !important;
+      color: black !important;
+    }
+  
+    /* Ensure main content fills width */
+    main {
+      width: 100%;
+    }
+  
+    /* Optional: Add page numbers (if using advanced print tools) */
+    .page-number::after {
+      content: "Page " counter(page);
+      display: block;
+      text-align: right;
+      font-size: 10pt;
+      margin-top: 20px;
+    }
+  }
+  

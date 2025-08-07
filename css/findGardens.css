@@ -1,0 +1,115 @@
+/* Flexbox Layout for Articles */
+article {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+/* Left Section (image + aside) */
+article .left {
+  flex: 1;
+}
+
+/* Right Section (text) */
+article .right {
+  flex: 1;
+}
+
+/* Styling for Images in the Left Section */
+article .left figure {
+  height: auto;
+  display: block;
+}
+
+article .left img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Video in the Right Section */
+article .right text {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header styling for article headings */
+h3 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for iframes */
+iframe {
+  margin-top: 20px;
+}
+
+/* Responsive Design for screens smaller than 768px */
+@media (max-width: 768px) {
+  article {
+      flex-direction: column;
+  }
+
+  article .left,
+  article .right {
+      width: 100%;
+  }
+  
+}
+
+/* Table design */
+.table-wrapper {
+  width: 100%;  /* テーブルの親要素が幅を100%に */
+}
+
+/* テーブルの基本設定 */
+table {
+  width: 100%;
+  border-collapse: collapse;  /* セルの境界線を結合 */
+}
+
+/* テーブルのセルにボーダーを追加 */
+table, th, td {
+  border: 1px solid #ccc; /* 明るい灰色のボーダー */
+}
+
+/* テーブルヘッダーの背景色とテキストスタイル */
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-align: left;
+  padding: 8px;
+}
+
+/* テーブルデータのセルスタイル */
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+
+  /* Style for non-visited links */
+  a:link {
+    color: #5555ff;               /* Soft blue for low contrast */
+    text-decoration: underline;  /* Always show underline */
+  }
+
+  /* Style for visited links (higher contrast) */
+  a:visited {
+    color: #00008b;               /* Darker blue for higher contrast */
+    text-decoration: underline;  /* Always show underline */
+    font-weight: bold;           /* Make visited links stand out more */
+  }
+
+  /* Style for links on hover or when focused (for accessibility) */
+  a:hover,
+  a:focus {
+    color: #ff4500;               /* Bright orange to indicate interaction */
+    text-decoration: underline;  /* Keep underline for consistency */
+  }
+
+
